@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 274px;
+    padding-right: 274px;
+    background-image: url(/assets/images/room.png);
+    border-radius: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+}
+
+.container::after {
+    background-color: #FF0000;
+    content:"";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 85%;
+    border-radius: 24px
+}
+
+.card {
+    max-width: 1140px;
+    width: 100%;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.heading-style {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    width: 100%;
+    margin-top: 64px;
+
+}
+
+.content-style {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 20px;
+
+}
+
+.quote-style {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #FF0000;
+}
+
+button {
+    width: 173px;
+    height: 63px;
+    border-radius: 56px;
+    gap: 10px;
+    padding-top: 20px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    background: #FFFFFF;
+    border: none;
+    margin-top: 56px;
+    transition: all 0.2s linear;
+    margin-bottom: 64px;
+
+
+}
+
+button:hover {
+    background-color: #FF0000BF;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+section{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
